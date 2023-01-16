@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("https://cdn.arstechnica.net/wp-content/uploads/2019/05/GettyImages-843466180.png");
+}
+
+h1 {
+  text-align: center;
+  font-family: Montserrat,sans-serif;
+  color: #26efb9;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 250px;
+  overflow: hidden;
+  margin: 50px auto;
+  background-color: transparent;
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+//.accordion ul li:first-child {
+ clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 49%, 0% 0%);
+}
+
+//.accordion ul li:last-child {
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div .btn {
+  display: block;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+  background: rgba(38, 239, 185, 0.3);
+}
+
+.accordion ul li:last-child .btn {
+  border-right: 0;
+}
+
+.number {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%); 
+  color: #26efb9;
+  font-size: 20px;
+  background-color: black;
+  line-height: 40px;
+  width: 40px!important;  
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  border: solid 2px #26efb9;
+}
+
+.accordion ul li div .btn .content {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div .btn h2 {
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  color: #000;
+}
+
+.accordion ul li div .btn p {
+  font-size: 13.5px;
+  color: #000;
+}
+
+.accordion ul li div .btn a {
+  font-size: 13.5px;
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #3AEFB9;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.accordion ul li div .btn a:hover {
+  background-color: #3AEFB9;
+  color: #000;
+}
+
+.accordion ul li:nth-child(1) {
+  background-image: url("https://www.jasonmpittman.com/wp-content/uploads/2019/03/comp-sci.jpg");
+}
+
+.accordion ul li:nth-child(2) {
+  background-image: url("https://i2.wp.com/blog.logsign.com/wp-content/uploads/2019/12/IT-security-vs-Cyber-Security.png?fit=772%2C386&ssl=1");
+}
+
+.accordion ul li:nth-child(3) {
+  background-image: url("https://www.iisecurity.in/images/courses/chfi.jpg");
+}
+
+.accordion ul li:nth-child(4) {
+  background-image: url("https://cdn-media-1.freecodecamp.org/images/ghF0kB011QpDd5vWRlaUjD1H0NxV6dLsKfjf");
+}
+
+.accordion ul li:nth-child(5) {
+  background-image: url("https://adoptostaging.blob.core.windows.net/media/python-developer-job-description-template-76fG8u.jpg");
+}
+
+.accordion ul li:nth-child(6) {
+  background-image: url("https://www.rse.org.uk/wp-content/uploads/2019/06/Brain-Image_201900607.jpeg");
+}
+
+.accordion ul li:nth-child(7) {
+  background-image: url("https://al.nd.edu/assets/380450/1000x562/bacs_code.jpg");
+}
+
+.accordion ul:hover li,
+.accordion ul:focus-within li {
+  width: 8%;
+  border-right: solid 2px #252525;
+  clip-path: polygon(93% 0, 100% 50%, 93% 100%, 0% 100%, 0 50%, 0% 0%);
+}
+
+.accordion ul li:focus {
+  outline: none;
+}
+
+.accordion ul:hover li:hover,
+.accordion ul li:focus,
+.accordion ul:focus-within li:focus {
+  width: 60%;
+  border-right: 0;
+  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 0 50%, 0% 0%);
+}
+
+.accordion ul:hover li:hover .btn,
+.accordion ul li:focus a,
+.accordion ul:focus-within li:focus a {
+  background: rgba(255, 255, 255, 0.8);  
+}
+
+.accordion ul:hover li:hover .btn .content,
+.accordion ul li:focus .btn .content,
+.accordion ul:focus-within li:focus div.btn .content {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.accordion ul:hover li {
+  width: 8% !important;
+  clip-path: inset(0 0 0 0);
+}
+
+.accordion ul:hover li .btn .content,
+.accordion ul:hover li .btn .number {
+  opacity: 0 !important;
+}
+
+.accordion ul:hover li:hover {
+  width: 60% !important;
+}
+
+.accordion ul:hover li:hover .btn {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.accordion ul:hover li:hover .btn .content {
+  opacity: 1 !important;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.fancybox-content {
+  width: 650px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  .accordion {
+    height: auto;
+  }
+  
+  .accordion ul li, .accordion ul li:hover,        .accordion ul:hover li, .accordion ul:hover      li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
