@@ -151,17 +151,17 @@
 }
 .command-list > li:hover > i { color: #5cf; }
 .command-list > li:nth-child(1) { transform: translateX(100px) translateY(45px); }
-.command-list > li:nth-child(1):hover ~ .hey-felix::after { content: "Hey Felix, how's the weather?"; }
+.command-list > li:nth-child(1):hover ~ .hey-felix::after { content: "数据与算法"; }
 .command-list > li:nth-child(2) { transform: translateX(-15px) translateY(-15px); }
-.command-list > li:nth-child(2):hover ~ .hey-felix::after { content: "Hey Felix, what time is it?"; }
+.command-list > li:nth-child(2):hover ~ .hey-felix::after { content: "操作系统"; }
 .command-list > li:nth-child(3) { transform: translateX(-35px) translateY(-55px); }
-.command-list > li:nth-child(3):hover ~ .hey-felix::after { content: "Hey Felix, what's today?"; }
+.command-list > li:nth-child(3):hover ~ .hey-felix::after { content: "网络"; }
 .command-list > li:nth-child(4) { transform: translateX(35px) translateY(-55px); }
-.command-list > li:nth-child(4):hover ~ .hey-felix::after { content: "Hey Felix, tell me a joke."; }
+.command-list > li:nth-child(4):hover ~ .hey-felix::after { content: "数学"; }
 .command-list > li:nth-child(5) { transform: translateX(15px) translateY(-15px); }
-.command-list > li:nth-child(5):hover ~ .hey-felix::after { content: "Hey Felix..."; }
+.command-list > li:nth-child(5):hover ~ .hey-felix::after { content: "计算几何"; }
 .command-list > li:nth-child(6) { transform: translateX(-100px) translateY(45px); }
-.command-list > li:nth-child(6):hover ~ .hey-felix::after { content: "Hey Felix, what inspires you?"; }
+.command-list > li:nth-child(6):hover ~ .hey-felix::after { content: "AI"; }
 
 /* Hey Felix */
 .hey-felix {
@@ -300,6 +300,74 @@
 	40%, 80%, 100% { box-shadow: 0 0 15px #fff, 0 0 15px #fff inset; }
 	20%, 60% { box-shadow: 0 0 100px #f55, 0 0 15px #f55 inset; }
 }
+.display-3 {
+    margin-top: 0px; /* 调整此处的数值以使标题靠近顶部 */
+}
+.display-3 {
+    margin-bottom: 600px; /* 调整下边距的值以增加间距 */
+}
+.display-3:hover {
+	animation: jump 0.5s infinite alternate, changeColor 1s infinite alternate;
+  }
+  
+  @keyframes jump {
+	0% {
+	  transform: translateY(0);
+	}
+	100% {
+	  transform: translateY(-5px);
+	}
+  }
+  
+  @keyframes changeColor {
+	0% {
+	  color: #fff; /* 初始颜色 */
+	}
+	50% {
+	  color: #f55; /* 中间颜色 */
+	}
+	70% {
+		color: rgb(86, 9, 114); /* 中间颜色 */
+	  }
+	100% {
+	  color: #5cf; /* 结束颜色 */
+	}
+  }
+  .display-3 {
+    margin-top: 0px; /* 调整此处的数值以使标题靠近顶部 */
+    margin-bottom: 600px; /* 调整下边距的值以增加间距 */
+}
+
+.display-3:hover {
+    animation: jump 0.5s infinite alternate, changeColor 1s infinite alternate;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: #fff; /* 初始颜色 */
+    }
+    50% {
+        color: #f55; /* 中间颜色 */
+    }
+    70% {
+        color: rgb(86, 9, 114); /* 中间颜色 */
+    }
+    100% {
+        color: #5cf; /* 结束颜色 */
+    }
+}
+
+   
+  
 
 /* Template Overrides */
 html, body {
