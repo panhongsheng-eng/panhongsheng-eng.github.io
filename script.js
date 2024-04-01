@@ -64,7 +64,7 @@ function tellJoke() {
 }
 function searchGoogle() {
 	deactivateFelix();
-	window.open("https://www.google.com/", "_blank");
+	window.open("https://tcs.nju.edu.cn/wiki/index.php?title=Main_Page", "_blank");
 }
 function showInspiration() {
 	deactivateFelix();
