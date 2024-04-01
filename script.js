@@ -68,7 +68,7 @@ function searchGoogle() {
 }
 function showInspiration() {
 	deactivateFelix();
-	window.open("https://dribbble.com/shots/5473987-AI-Robot", "_blank");
+	window.open("https://tcs.nju.edu.cn/wiki/index.php?title=Main_Page", "_blank");
 }
 function showResponse() {
 	responseFrame.classList.add("active");
