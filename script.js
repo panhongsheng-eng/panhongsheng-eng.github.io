@@ -68,7 +68,7 @@ function searchGoogle() {
 }
 function showInspiration() {
 	deactivateFelix();
-	window.open("https://tcs.nju.edu.cn/wiki/index.php?title=Main_Page", "_blank");
+	window.open("https://wiki.swarma.org/graph.v20210913.html", "_blank");
 }
 function showResponse() {
 	responseFrame.classList.add("active");
